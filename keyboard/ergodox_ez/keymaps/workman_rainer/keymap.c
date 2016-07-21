@@ -6,6 +6,7 @@
 #define NAV 1 // symbols
 // #define MDIA 2 // media keys
 
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
@@ -24,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | Home |       | PgUp |        |      |
- *                                 | Space|  CMD |------|       |------|  Alt   |Enter |
+ *                                 | Space|  CMD |------|       |------|  Git   |Enter |
  *                                 |      |      | End  |       | PgDn |        |      |
  *                                 `--------------------'       `----------------------'
  */
@@ -48,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   MO(NAV),  KC_EQL, KC_GRV, KC_GRV, KC_BSLS,
              KC_LALT,        CTL_T(KC_ESC),
              KC_PGUP,
-             KC_PGDN, KC_LALT, KC_ENT
+             KC_PGDN, HYPR(KC_G), KC_ENT
     ),
 
     /* Keymap 1: Navigation Layer
